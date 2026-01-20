@@ -179,7 +179,7 @@ jobs:
       
       - name: Uploader les rapports de scan
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vulnerability-reports
           path: |
@@ -253,7 +253,7 @@ jobs:
       
       - name: Uploader le rapport Markdown
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vulnerability-report-markdown
           path: vulnerability-report.md
