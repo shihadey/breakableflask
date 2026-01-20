@@ -1,9 +1,9 @@
-name: Automatisation des tests DevSecOps
+name: Pipeline for Vulnerability checking 
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -179,7 +179,7 @@ jobs:
       
       - name: Uploader les rapports de scan
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: vulnerability-reports
           path: |
@@ -253,7 +253,7 @@ jobs:
       
       - name: Uploader le rapport Markdown
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: vulnerability-report-markdown
           path: vulnerability-report.md
