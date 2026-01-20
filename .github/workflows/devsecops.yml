@@ -1,4 +1,4 @@
-name: TP Orchestration avancée 
+name: Automatisation des tests DevSecOps
 
 on:
   push:
