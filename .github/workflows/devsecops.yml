@@ -1,4 +1,4 @@
-name: Pipeline for Vulnerability checking 
+name: Pipeline for Vulnerability checkin
 
 on:
   push:
